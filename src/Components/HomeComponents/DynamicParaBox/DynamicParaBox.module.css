@@ -1,0 +1,77 @@
+.DynamicParaBox {
+  font-family: "Plus Jakarta Sans";
+  color: var(--light);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.DynamicParaBox h2 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  background: linear-gradient(
+    180deg,
+    #ffffff 60%,
+    rgba(255, 255, 255, 0.2) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.container {
+  width: 80%;
+  padding: 25px;
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 50px 100px;
+}
+
+.optionList {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 10px 0;
+
+  width: 100%;
+  padding: 30px 0px;
+
+  font-weight: 500;
+}
+
+.optionSpan {
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 25px;
+  padding: 10px 25px;
+
+  flex: 0 0 200px;
+
+  text-align: center;
+
+  cursor: pointer;
+}
+
+.optionSpan.selected {
+  background-color: grey;
+  border-color: transparent;
+}
+
+.optionSpan:hover:not(.selected) {
+  background-color: rgba(211, 211, 211, 0.2);
+}
+
+@media (max-width: 800px) {
+  .container {
+    padding: 25px 50px;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    width: 60%;
+  }
+}
