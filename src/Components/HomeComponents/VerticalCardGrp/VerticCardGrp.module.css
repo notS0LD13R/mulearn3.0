@@ -1,0 +1,103 @@
+.VertiCardGroup {
+    font-family: "Plus Jakarta Sans";
+    color: var(--light);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    position: relative;
+    height: 100%;
+}
+
+.VertiCardGroup .container {
+    height: 80%;
+    overflow: auto;
+
+    scroll-snap-type: y mandatory;
+
+    -webkit-mask-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.1),
+        rgba(0, 0, 0, 1) 10% 90%,
+        rgba(0, 0, 0, 0.1)
+    );
+    mask-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.1),
+        rgba(0, 0, 0, 1) 10% 90%,
+        rgba(0, 0, 0, 0.1)
+    );
+}
+.container::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    max-width: 500px;
+
+    margin-top: 60px;
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 20px 20px;
+
+    position: relative;
+
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: repeat(3, auto);
+    row-gap: 0.5rem;
+}
+
+.card figure {
+    grid-row: span 3;
+
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card img {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card figcaption {
+    color: gray;
+    font-size: small;
+}
+
+.card h2 {
+    font-size: 1.5rem;
+}
+
+.card p {
+    font-size: small;
+    color: lightgray;
+}
+
+.card .tagContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    color: gray;
+    font-size: small;
+}
+
+.card button {
+    color: lightgray;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 0.4rem 1.5rem;
+    border-radius: 1.5rem;
+
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
