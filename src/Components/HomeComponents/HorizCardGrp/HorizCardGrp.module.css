@@ -1,0 +1,96 @@
+.HorizCardGroup{
+    font-family: 'Plus Jakarta Sans';
+    color: var(--light);
+    width: 80%;
+
+}
+
+.container {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-evenly;
+    align-items: start;
+}
+
+.card{
+    width: 375px;
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 25px 25px;
+    padding-top: 50px;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+
+    text-align: center;
+}
+
+.card figure{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+
+    position: absolute;
+    top: -60px;
+}
+
+.card img{
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card figcaption{
+    color: gray;
+    font-size: small;
+}
+
+.row{
+    width: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
+    color: gray;
+}
+
+.iconTextPair{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.iconTextPair svg{
+    transform: scale(1.1);
+}
+
+.card h2{
+    font-size: 2rem;
+    
+}
+
+.card p{
+    font-size: small;
+    color: lightgray;
+}
+
+.card button{
+    
+    color: lightgray;
+    background-color:rgba(255, 255, 255, 0.2);
+    padding: .4rem 1.5rem;
+    border-radius: 1.5rem;
+
+    cursor: pointer;
+}
+
+.card button:hover{
+    background-color:rgba(255, 255, 255, 0.3);
+}
