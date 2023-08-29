@@ -31,12 +31,18 @@ const VertiCardGroup = (props: Props) => {
     scrollRef.current = null;
     if (scrollPos[0] === 0) {
       //Reached top
-      scrollRef.current = ["top", target.lastChild!.clientHeight + 60];
+      scrollRef.current = [
+        "top",
+        (target.lastChild as HTMLDivElement).clientHeight + 60,
+      ];
       tempArr.unshift(tempArr.pop()!);
     }
     if (Math.floor(scrollPos[1]) <= 1) {
       //Reached bottom
-      scrollRef.current = ["bottom", target.firstChild!.clientHeight + 60];
+      scrollRef.current = [
+        "bottom",
+        (target.firstChild as HTMLDivElement).clientHeight + 60,
+      ];
       tempArr.push(tempArr.shift()!);
     }
     setCards(tempArr);

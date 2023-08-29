@@ -3,6 +3,7 @@ import DynamicParaBox from "../../Components/HomeComponents/DynamicParaBox/Dynam
 import Banner from "../../Components/CommunityLogoScroller/Banner";
 import HorizCardGrp from "../../Components/HomeComponents/HorizCardGrp/HorizCardGrp";
 import FAQ from '../../Components/HomeComponents/Faq/Faq'
+import Footer from '../../Components/Footer/Footer'
 
 const imageCount = 5;
 const images = new Array(imageCount)
@@ -19,6 +20,7 @@ const Home = () => {
       <HorizCardGrp />
       <DynamicParaBox />
       <FAQ />
+      <Footer />
     </div>
   );
 };
