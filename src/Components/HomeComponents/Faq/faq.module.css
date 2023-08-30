@@ -1,0 +1,111 @@
+.Faq {
+    /* change to 100% when using inside a container*/
+    width: 90%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem 3rem;
+}
+
+.Faq > h2 {
+    font-weight: 700;
+    font-size: 3rem;
+    background: linear-gradient(
+        180deg,
+        #ffffff 60%,
+        rgba(255, 255, 255, 0.2) 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+    text-align: center;
+
+    grid-column: span 2;
+}
+
+.Faq .questionContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.Faq .question {
+    border-bottom: #727272 solid 0.5px;
+}
+
+.Faq .question > * {
+    display: block;
+    padding: 0.5rem 0rem;
+}
+
+.Faq .question > span {
+    font-size: 20px;
+    font-weight: 500;
+
+    display: flex;
+    justify-content: space-between;
+
+    cursor: pointer;
+}
+
+.Faq .question .gridWrapper {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s;
+}
+
+.Faq .question.selected .gridWrapper {
+    grid-template-rows: 1fr;
+}
+
+.Faq .question p {
+    font-weight: 400;
+    font-size: 18px;
+    overflow: hidden;
+    color: #888888;
+}
+
+.Faq .question.selected > span > svg {
+    transform: rotate(0.5turn);
+}
+
+.Faq .Form {
+    height: 400px;
+}
+
+.Faq .Form input,
+.Faq .Form textArea {
+    border: 0.5px solid #ffffff4d;
+    border-radius: 1rem;
+    padding: 20px 20px;
+    margin: 0.25rem 0;
+
+    background: radial-gradient(circle at top, #ffffff1a, #ffffff00);
+
+    width: 100%;
+    height: 75px;
+}
+
+.Faq .Form .textArea {
+    height: 300px;
+}
+.Faq .Form .emailSection {
+    position: relative;
+}
+.Faq .Form .emailSection button {
+    position: absolute;
+    right: 1rem;
+    top: 14px;
+
+    background-color: rgba(255, 255, 255, 0.1);
+    color: lightgray;
+    padding: 1rem 2.5rem;
+    border: 1px solid #525154;
+    border-radius: 0.5rem;
+
+    cursor: pointer;
+}
+
+.Faq .Form .emailSection button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
