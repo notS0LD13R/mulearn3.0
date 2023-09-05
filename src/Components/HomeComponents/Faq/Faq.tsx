@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 
-import styles from "./faq.module.css";
+import styles from "./Faq.module.css";
 import { Formik, Form, Field } from "formik";
 
 type faqData = {
@@ -14,15 +14,15 @@ type Props = {
 };
 
 const Faq = (props: Props) => {
-  const [questionActive, setQuestionActive] = useState<boolean[]>(
-    Array(props.faqs.length).fill(false)
-  );
+  const [activeQuestion, setActiveQuestion] = useState<number | null>(null);
 
   const handleToggle = (index: number) => {
     console.log("clicked");
-    const tempArr = [...questionActive];
-    tempArr[index] = !tempArr[index];
-    setQuestionActive(tempArr);
+    if (activeQuestion === index) {
+      setActiveQuestion(null);
+    } else {
+      setActiveQuestion(index);
+    }
   };
 
   return (
@@ -35,7 +35,7 @@ const Faq = (props: Props) => {
             className={
               styles.question +
               " " +
-              (questionActive[index] ? styles.selected : "")
+              (activeQuestion === index ? styles.selected : "")
             }
           >
             <span onClick={() => handleToggle(index)}>

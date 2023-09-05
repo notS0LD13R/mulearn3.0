@@ -1,4 +1,4 @@
-import styles from "./HorizCardGroup.module.css";
+import styles from "./HorizCardGrp.module.css";
 import { AiOutlineClockCircle, AiOutlineFileText } from "react-icons/ai";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { BsArrowUpRightSquare } from "react-icons/bs";

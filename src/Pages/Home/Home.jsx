@@ -13,13 +13,29 @@ const images = new Array(imageCount)
     image: `${image}${ix + 1}.png`,
   }));
 
+
+   const faqData = [
+        {
+            head: "lorem ipsum?",
+            para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
+        },
+        {
+            head: "lorem ipsum lorem ipsum lorem ipsum?",
+            para: "Lorem Ipsum is simply dummLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,y text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
+        },
+        {
+            head: "lorem ipsum?",
+            para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
+        },
+    ];
+
 const Home = () => {
   return (
     <div>
       <Banner images={images} speed={8000} />
       <HorizCardGrp />
       <DynamicParaBox />
-      <FAQ />
+      <FAQ faqs={faqData} />
       <Footer />
     </div>
   );
