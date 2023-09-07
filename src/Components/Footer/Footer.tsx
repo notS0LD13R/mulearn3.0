@@ -48,7 +48,7 @@ const Footer = () => {
   return (
     <footer className={styles.Footer}>
       <div className={styles.contentWrapper}>
-        <section>
+        <div className={styles.contentMainSection}>
           <div className={styles.footerMain}>
             {/* <h2>µLearn</h2> */}
             <ULearn />
@@ -63,17 +63,19 @@ const Footer = () => {
               <FaLinkedinIn />
             </div>
           </div>
-          {links.map((list) => (
-            <ul className={styles.linkList}>
-              <strong>{list.head}</strong>
-              {list.links.map((link, index) => (
-                <li key={`flink${index}`}>
-                  <a href={link.link}>{link.label}</a>
-                </li>
-              ))}
-            </ul>
-          ))}
-        </section>
+          <div className={styles.footerLinksSet}>
+            {links.map((list) => (
+              <ul className={styles.linkList}>
+                <strong>{list.head}</strong>
+                {list.links.map((link, index) => (
+                  <li key={`flink${index}`}>
+                    <a href={link.link}>{link.label}</a>
+                  </li>
+                ))}
+              </ul>
+            ))}
+          </div>
+        </div>
         <small>
           &#169; Copyright 2023. All Rights Reserved. µLearn Foundation.
         </small>
