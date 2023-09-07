@@ -32,7 +32,7 @@ const Home = () => {
         <div>
             <Banner images={images} speed={8000} />
             {/* <HorizCardGrp /> */}
-            {/* <CareerLabs /> */}
+            <CareerLabs />
             <DynamicParaBox />
             <FAQ faqs={faqData} />
             <Footer />
