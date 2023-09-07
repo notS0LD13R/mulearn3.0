@@ -7,7 +7,7 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 import styles from "./Rocket.module.css";
-import path from "../assets/path.svg";
+import path from "./assets/path.svg";
 import { setFrames } from "./AnimationFunc/pin";
 import { level4Entrance } from "./AnimationFunc/level4Entrance";
 import { level1Entrance } from "./AnimationFunc/level1Entrance";
@@ -15,10 +15,10 @@ import { intro } from "./AnimationFunc/intro";
 import { rocketEntrance } from "./AnimationFunc/rocketEntrance";
 import { level3Entrance } from "./AnimationFunc/level3Entrance";
 import { level2Entrance } from "./AnimationFunc/level2Entrance";
-import Earth from "../assets/earth.svg";
+import Earth from "./assets/earth.svg";
 import { planet1 } from "./AnimationFunc/planet1";
 import { planet2 } from "./AnimationFunc/planet2";
-import Moon from "../assets/moon.svg";
+import Moon from "./assets/moon.svg";
 const desc = `Basic Enablement Tasks
 This marks the start and the overview of µLearn
 foundation. Ivde enthelum okke data indakki 
