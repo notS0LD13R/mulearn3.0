@@ -35,7 +35,7 @@ const Home = () => {
             {/* <CareerLabs /> */}
             <DynamicParaBox />
             <FAQ faqs={faqData} />
-            {/* <Footer /> */}
+            <Footer />
         </div>
     );
 };
