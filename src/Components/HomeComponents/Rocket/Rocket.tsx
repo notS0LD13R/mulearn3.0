@@ -1,8 +1,8 @@
 import { useLayoutEffect, useMemo, useRef } from "react";
-import rocketLevel1 from "../assets/level1.png";
-import rocketLevel2 from "../assets/level2.png";
-import rocketLevel3 from "../assets/level3.png";
-import rocketLevel4 from "../assets/level4.png";
+import rocketLevel1 from "./assets/level1.png";
+import rocketLevel2 from "./assets/level2.png";
+import rocketLevel3 from "./assets/level3.png";
+import rocketLevel4 from "./assets/level4.png";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";

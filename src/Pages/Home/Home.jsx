@@ -1,6 +1,7 @@
 import React from "react";
 import DynamicParaBox from "../../Components/HomeComponents/DynamicParaBox/DynamicParaBox";
-import Banner from "../../Components/CommunityLogoScroller/Banner";
+import Banner from "../../Components/CommunityLogoScroller/Banner"
+import Rocket from '../../Components/HomeComponents/Rocket/Rocket'
 import HorizCardGrp from "../../Components/HomeComponents/HorizCardGrp/HorizCardGrp";
 import CareerLabs from "../../Components/HomeComponents/CareerLabs/CareerLabs";
 import FAQ from "../../Components/HomeComponents/Faq/Faq";
@@ -34,6 +35,7 @@ const Home = () => {
             {/* <HorizCardGrp /> */}
             <CareerLabs />
             <DynamicParaBox />
+            <Rocket />
             <FAQ faqs={faqData} />
             <Footer />
         </div>

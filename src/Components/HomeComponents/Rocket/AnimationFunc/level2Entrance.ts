@@ -1,4 +1,6 @@
-export function level2Entrance(props) {
+import { MutableRefObject } from "react";
+
+export function level2Entrance(props: { descLevel1?: MutableRefObject<null>; descLevel2: any; descLevel3?: MutableRefObject<null>; descLevel4?: MutableRefObject<null>; pathWay: any; journey?: MutableRefObject<null>; gsap: any; slider: any; rocket?: MutableRefObject<null>; journeyLevel1?: MutableRefObject<null>; journeyLevel2: any; journeyLevel4?: MutableRefObject<null>; journeyLevel3?: MutableRefObject<null>; earthWay?: MutableRefObject<null>; moonWay?: MutableRefObject<null>; }) {
   const { gsap, slider, pathWay, descLevel2, journeyLevel2 } = props;
   const anime = gsap
     .timeline({
