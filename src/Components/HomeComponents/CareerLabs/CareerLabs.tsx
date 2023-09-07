@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import styles from "./CareerLabs.module.css";
 import Card from "../HorizCardGrp/Cards";
 
@@ -110,10 +110,15 @@ const CareerLabs = () => {
         }
     };
 
-    const triggerRotate = () => {
-        setCardIndex(cardIndex + 7);
+    const triggerRotateLoop = async () => {
+        //Infinite Loop to trigger animation
+        const one = 1; //lint error :)
+        while (one) {
+            await new Promise((res) => setTimeout(res, 5000));
+            setCardIndex(cardIndex + 7);
+        }
     };
-
+    triggerRotateLoop();
     useEffect(() => {
         setTimeout(rotateCard, 500);
     }, [cardIndex]);
@@ -122,11 +127,7 @@ const CareerLabs = () => {
         <div className={styles.CareerLabs}>
             <h2>Career Labs</h2>
             <div className={styles.container}>
-                <div
-                    className={styles.cardContainer}
-                    ref={cardContainerRef}
-                    onClick={triggerRotate}
-                >
+                <div className={styles.cardContainer} ref={cardContainerRef}>
                     {loopedSlice(cardData, cardIndex, cardCount).map(
                         (card, index) => {
                             return (

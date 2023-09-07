@@ -3,7 +3,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
 }
 
 .CareerLabs > h2 {
@@ -28,7 +27,8 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    height: 100%;
+    padding: 0 1rem;
+    gap: 1rem;
 }
 
 .textContainer {
@@ -37,8 +37,7 @@
     justify-content: center;
     align-items: start;
     gap: 3rem;
-
-    width: 45%;
+    flex: 0 1 500px;
 }
 
 .textContainer > h2 {
@@ -47,7 +46,6 @@
 
 .textContainer > p {
     text-align: left;
-    width: 75%;
     font-size: 1.1rem;
 }
 .textContainer button {
@@ -62,8 +60,8 @@
 }
 
 .cardContainer {
-    width: 50%;
-    height: 100%;
+    width: 650px;
+    height: 650px;
     overflow: hidden;
     position: relative;
 }
@@ -71,7 +69,8 @@
 .card {
     position: absolute;
     background-color: #242424;
-    transition: all 1s;
+    transition-duration: 1s;
+    transition-property: top, left, opacity;
 }
 
 .card.c0 {
@@ -95,4 +94,10 @@
     top: -100%;
     opacity: 0;
     left: 40%;
+}
+
+@media (max-width: 1200px) {
+    .textContainer {
+        align-items: center;
+    }
 }
