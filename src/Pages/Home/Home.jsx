@@ -31,11 +31,11 @@ const Home = () => {
     return (
         <div>
             <Banner images={images} speed={8000} />
-            <HorizCardGrp />
-            <CareerLabs />
+            {/* <HorizCardGrp /> */}
+            {/* <CareerLabs /> */}
             <DynamicParaBox />
             <FAQ faqs={faqData} />
-            <Footer />
+            {/* <Footer /> */}
         </div>
     );
 };
