@@ -1,0 +1,103 @@
+.CareerLabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.CareerLabs > h2 {
+    font-weight: 700;
+    font-size: 3rem;
+    background: linear-gradient(
+        180deg,
+        #ffffff 60%,
+        rgba(255, 255, 255, 0.2) 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+    text-align: center;
+
+    grid-column: span 2;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+    gap: 1rem;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 3rem;
+    flex: 0 1 500px;
+}
+
+.textContainer > h2 {
+    font-size: 4rem;
+}
+
+.textContainer > p {
+    text-align: left;
+    font-size: 1.1rem;
+}
+.textContainer button {
+    color: lightgray;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 0.4rem 1.5rem;
+    border-radius: 1.5rem;
+
+    font-size: 1.5rem;
+
+    cursor: pointer;
+}
+
+.cardContainer {
+    width: 650px;
+    height: 650px;
+    overflow: hidden;
+    position: relative;
+}
+
+.card {
+    position: absolute;
+    background-color: #242424;
+    transition-duration: 1s;
+    transition-property: top, left, opacity;
+}
+
+.card.c0 {
+    top: -100%;
+    left: 0%;
+    opacity: 0;
+}
+.card.c1 {
+    top: 10%;
+    left: 0%;
+}
+.card.c2 {
+    top: 40%;
+    left: 15%;
+}
+.card.c3 {
+    top: 20%;
+    left: 40%;
+}
+.card.c4 {
+    top: -100%;
+    opacity: 0;
+    left: 40%;
+}
+
+@media (max-width: 1200px) {
+    .textContainer {
+        align-items: center;
+    }
+}

@@ -1,4 +1,4 @@
-import styles from "./HorizCardGroup.module.css";
+import styles from "./HorizCardGrp.module.css";
 import Card from "./Cards";
 
 const HorizCardGroup = () => {

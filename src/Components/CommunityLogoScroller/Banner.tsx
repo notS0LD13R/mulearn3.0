@@ -1,9 +1,9 @@
 import { CSSProperties } from "react";
-import styles from "./banner.module.css";
+import styles from "./Banner.module.css";
 
 type BannerProps = {
   images: {
-    id: `${string}-${string}-${string}-${string}-${string}`;
+    id: string;
     image: string;
   }[];
   speed?: number;
