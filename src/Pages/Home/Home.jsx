@@ -7,11 +7,11 @@ import CareerLabs from "../../Components/HomeComponents/CareerLabs/CareerLabs";
 import Comments from "../../Components/HomeComponents/Comments/Comments";
 import FAQ from "../../Components/HomeComponents/Faq/Faq";
 import Footer from "../../Components/Footer/Footer";
+import images from "../../assets/Logos";
 
-const imageCount = 5;
-const images = new Array(imageCount).fill(`/logos`).map((image, ix) => ({
+const imageList = Object.values(images).map((image, ix) => ({
     id: crypto.randomUUID(),
-    image: `${image}${ix + 1}.png`,
+    image: image,
 }));
 
 const faqData = [
@@ -32,7 +32,7 @@ const faqData = [
 const Home = () => {
     return (
         <div>
-            <Banner images={images} speed={8000} />
+            <Banner images={imageList} speed={8000} />
             {/* <HorizCardGrp /> */}
             <CareerLabs />
             <DynamicParaBox />
