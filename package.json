@@ -10,13 +10,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@react-three/drei": "^9.83.9",
+    "@react-three/fiber": "^8.14.2",
     "formik": "^2.4.3",
     "gasp": "^0.0.2",
     "gsap": "^3.12.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.10.1",
-    "react-router-dom": "^6.15.0"
+    "react-router-dom": "^6.15.0",
+    "three": "^0.156.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
