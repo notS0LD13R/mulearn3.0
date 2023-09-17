@@ -8,7 +8,7 @@ import Comments from "../../Components/HomeComponents/Comments/Comments";
 import FAQ from "../../Components/HomeComponents/Faq/Faq";
 import Footer from "../../Components/Footer/Footer";
 import images from "../../assets/Logos";
-
+import Navbar from "../../Components/NavBar/NavBar";
 const imageList = Object.values(images).map((image, ix) => ({
     id: crypto.randomUUID(),
     image: image,
@@ -32,6 +32,7 @@ const faqData = [
 const Home = () => {
     return (
         <div>
+            <Navbar />
             <Banner images={imageList} speed={8000} />
             {/* <HorizCardGrp /> */}
             <CareerLabs />

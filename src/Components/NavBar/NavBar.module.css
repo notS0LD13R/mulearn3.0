@@ -1,0 +1,59 @@
+.navBar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1.5rem;
+
+    position: fixed;
+    z-index: 100;
+
+    left: 50%;
+    transform: translateX(-50%);
+
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(2.5px);
+    color: lightgray;
+    padding: 1rem 2.5rem;
+    margin-top: 1rem;
+    border: 1px solid #525154;
+    border-radius: 5rem;
+}
+
+.navBar a {
+    color: inherit;
+    white-space: nowrap;
+}
+
+.navBar a:hover {
+    color: grey;
+}
+
+.navBar svg {
+    width: 25px;
+    height: 25px;
+
+    display: none;
+}
+.navBar svg:hover {
+    color: grey;
+}
+
+@media (max-width: 500px) {
+    .navBar {
+        flex-direction: column;
+        border-radius: 1rem;
+        height: 50px;
+    }
+    .navBar svg {
+        display: block;
+    }
+    .navBar.active {
+        height: auto;
+    }
+    .navBar a {
+        display: none;
+    }
+    .navBar.active a {
+        display: block;
+    }
+}
