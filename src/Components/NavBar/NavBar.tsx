@@ -8,7 +8,7 @@ const NavBar = () => {
     return (
         <nav className={styles.navBar + " " + (active ? styles.active : "")}>
             <Menu onClick={() => setActive(!active)} />
-            <a href="#">Communityy</a>
+            <a href="#">Community</a>
             <a href="#">Get Involved</a>
             <a href="#">Careers</a>
             <a href="#">Projects</a>
